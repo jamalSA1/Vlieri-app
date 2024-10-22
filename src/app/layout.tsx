@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Lora } from "next/font/google";
+import { Tajawal } from "next/font/google";
 import "./globals.css";
 
-const lora = Lora({ subsets: ["latin"] });
+const tajawal = Tajawal({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: {
     template: "%s | Vlieri",
-    absolute: "Flow Shop",
+    absolute: "Vlieri",
   },
-  description: "A full-stack e-commerce application built with Next.js 15",
+  description: "Vlieri هي منصة تجارة إلكترونية حديثة مخصصة لتوفير تجربة تسوق سلسة",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lora.className}>{children}</body>
+      <body className={tajawal.className}>{children}</body>
     </html>
   );
 }
